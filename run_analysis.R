@@ -3,10 +3,10 @@ library(tidyverse)
 
 # download zip file containing data
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-filename <- "getdata_projectfiles_UCI HAR Dataset.zip"
+filename <- "UCI HAR Dataset.zip"
 
 if (!file.exists(filename)) {
-  download.file(fileUrl, firename, mode = "curl")
+  download.file(fileUrl, filename, mode = "curl")
 }
 
 # Check the existence of upgroup files
